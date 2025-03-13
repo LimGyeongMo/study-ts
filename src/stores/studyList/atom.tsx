@@ -34,5 +34,11 @@ export const studyListState = atom<Site[]>({
             url: "https://ant.design/",
             description: "Ant Design UI 컴포넌트 라이브러리입니다.",
         },
+        {
+            id: 5,
+            title: "Ant Design",
+            url: "https://ant.design/",
+            description: "Ant Design UI 컴포넌트 라이브러리입니다.",
+        },
     ],
 });
