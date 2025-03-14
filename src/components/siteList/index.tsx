@@ -1,7 +1,7 @@
 import React from "react";
 import { List, Card } from "antd";
 import { useRecoilValue } from "recoil";
-import { studyListState, Site } from "../../stores/studyList/atom";
+import { studyListState, Site } from "../../stores/studyData/atom";
 
 const SiteList: React.FC = () => {
     const sites: Site[] = useRecoilValue(studyListState);
@@ -10,6 +10,7 @@ const SiteList: React.FC = () => {
         <List
             grid={{ gutter: 16, column: 2 }}
             dataSource={sites}
+            style={{ height: "fit-content" }}
             renderItem={(site: Site) => (
                 <List.Item>
                     <Card
